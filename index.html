@@ -12,14 +12,47 @@
     <title>Bootstrap Drills</title>
   </head>
   <body>
-    <div class="container">
-        <div class="row justify-content-center">
+    <div class="container border border-success">
+        <div class="row justify-content-center text-center">
             <h1 class="col-6 bg-primary">First Bootstrap Project</h1>
         </div>
         <div class="row">
-            <div class="col-4">Papa</div>
-            <div class="col-4">John's</div>
-            <div class="col-4">Pizza</div>
+            <div class="col-4 text-left">Papa</div>
+            <div class="col-4 text-center">John's</div>
+            <div class="col-4 text-center">Pizza</div>
+        </div>
+        <div class="row col-12 p-3">
+            <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll keep your email safe... maybe</small>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" aria-describedby="passwordHelp" placeholder="Enter password">
+                <small id="passwordHelp" class="form-text text-muted">This one is just getting leaked on purpose</small>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" value="" id="catsCheck">
+                <label for="catsCheck" class="form-check-label">Cats</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" value="" id="dogsCheck">
+                <label for="dogsCheck" class="form-check-label">Dogs</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="cheese" id="cheese" value="option1" checked>
+                <label for="cheese" class="form-check-label">Cheese pizza</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="hawaiian" id="hawaiian" value="option2">
+                <label for="hawaiian" class="form-check-label">Hawaiian pizza</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="supreme" id="supreme" value="option3">
+                <label for="supreme" class="form-check-label">Supreme pizza</label>
+            </div>
+            <button class="btn-danger col-3">submit</button>
         </div>
     </div>
 
